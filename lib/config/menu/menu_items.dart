@@ -29,6 +29,12 @@ class MenuItems{
       link: '/progress',
       icon: Icons.refresh_rounded
     ),
+      MenuItems(
+      title: 'Snacbars y dialogos',
+      subTitle: 'Indicadores en pantalla',
+      link: '/snacbars',
+      icon: Icons.info_outline
+    ),
 
   ];
 
