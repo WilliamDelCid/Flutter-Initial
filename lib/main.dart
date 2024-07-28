@@ -15,7 +15,7 @@ class MainApp extends StatelessWidget {
       title: 'Widgets App',
       routerConfig: appRouter,
       debugShowCheckedModeBanner: false,
-      theme: AppTheme(selectedColor: 5).getTheme(),
+      theme: AppTheme(selectedColor: 6).getTheme(),
       // home:  Scaffold(
       //   body: Center(
       //     child: FilledButton(onPressed: (){}, child: const Text('Hello World')),
