@@ -14,7 +14,7 @@ class MainApp extends StatelessWidget {
     return  MaterialApp.router(
       routerConfig: appRouter,
       debugShowCheckedModeBanner: false,
-      theme: AppTheme(selectedColor: 2).getTheme(),
+      theme: AppTheme(selectedColor: 5).getTheme(),
       // home:  Scaffold(
       //   body: Center(
       //     child: FilledButton(onPressed: (){}, child: const Text('Hello World')),

@@ -91,14 +91,27 @@ class CustomButton extends StatelessWidget {
 
     return ClipRRect(
       borderRadius: BorderRadius.circular(20),
-      child: Material(
-        color: colors.primary,
-        child: InkWell(
-          onTap: (){},
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 10),
-            child: Text('Hola Mundo',style: TextStyle(color: Colors.white),),
-          ),
+      child: _Material(colors: colors),
+    );
+  }
+}
+
+class _Material extends StatelessWidget {
+  const _Material({
+    required this.colors,
+  });
+
+  final ColorScheme colors;
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      color: colors.primary,
+      child: InkWell(
+        onTap: (){},
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20,vertical: 10),
+          child: Text('Hola Mundo',style: TextStyle(color: Colors.white),),
         ),
       ),
     );
