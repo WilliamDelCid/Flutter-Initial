@@ -59,6 +59,8 @@ class _InfiniteScrollScreenState extends State<InfiniteScrollScreen> {
     });
 
     //TODO: mover scroll hacia abajo
+    moveScrollToBottom();
+
 
   }
 
@@ -80,6 +82,20 @@ class _InfiniteScrollScreenState extends State<InfiniteScrollScreen> {
     });
 
   }
+
+  void moveScrollToBottom(){
+
+
+    if(scrollController.position.pixels + 150 <= scrollController.position.maxScrollExtent) return; //Si no esta cerca del final no hagas nada
+
+    scrollController.animateTo(
+      scrollController.position.pixels + 120,
+      duration: const Duration(milliseconds: 300),
+      curve: Curves.fastOutSlowIn
+    );
+    
+  }
+
 
   void addFiveImages() {
     final lastId = imagesIds.last;
