@@ -11,13 +11,15 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final scaffoldKey = GlobalKey<ScaffoldState>(); // Llave para el scaffold de la pantalla para tener la referencia de la pantalla
     return Scaffold(
+      key: scaffoldKey,
       appBar:  AppBar(
         title:const Text('Flutter'),
       ),
       body: const _HomeView(),
       // endDrawer: , Un menu que se abre al revez del menu normal
-      drawer: const SideMenu(),
+      drawer: SideMenu(scaffoldKey: scaffoldKey,),
     );
   }
 }
