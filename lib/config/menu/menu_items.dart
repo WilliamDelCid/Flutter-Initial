@@ -59,5 +59,17 @@ class MenuItems{
       link: '/infinite',
       icon: Icons.list_alt_rounded
     ),
+      MenuItems(
+      title: 'Riverpod Counter',
+      subTitle: 'Counter Screen',
+      link: '/counter_screen',
+      icon: Icons.add
+    ),
+      MenuItems(
+      title: 'Cambiar tema',
+      subTitle: 'Cambiar tema de la aplicacion',
+      link: '/theme_changer',
+      icon: Icons.color_lens_outlined
+    ),
   ];
 
